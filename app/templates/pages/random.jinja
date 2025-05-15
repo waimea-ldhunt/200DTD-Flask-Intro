@@ -1,0 +1,21 @@
+{% extends "pages/base.jinja" %}
+
+{% block title %}
+    Flask Demo | Random
+{% endblock %}
+
+{% block content %}
+
+    <script>
+        function generateNumber() {
+        var number = document.getElementById("number");
+        number.innerHTML = Math.floor((Math.random()* 1000) + 1).append("<br>" + number.innerHTML)  ;
+        }
+    </script>
+
+    <article id="random">
+        <button onclick="generateNumber();">Generate a Random Number</button>
+        <p><strong id="number"></strong></p>
+    </article>
+
+{% endblock %}
