@@ -1,5 +1,18 @@
+
+article#notFound{
+    text-align: center;
+}
+
+article#notFound h1{
+    font-size: 7rem;
+}
+
 article#random{
     font-size: 7rem;
     color: var(--pico-primary);
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
