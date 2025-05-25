@@ -9,25 +9,29 @@
         <h1>Hello Form!</h1>
         <p>i love form</p>
 
-        <form methon="POST" action="/processForm">
+        <form method="POST" action="/processForm/">
             <fieldset>
                 <label>
                     Your Name:
                     <input
+                    name="name"
                     placeholder="Name"
                     required
                     >
                 </label> 
-
                 <label>
-                    Your Age: 
+                    Your Age:
                     <input
-                    type = "number"
+                    name="age"
+                    type="range"
                     placeholder="Name"
                     required
                     >
                 </label>
-
+                <label>
+                    <input type="checkbox" name="robot?" unchecked />
+                        I am not a Robot
+                    </label>
             </fieldset>
 
             <input type="submit" value="Submit">
